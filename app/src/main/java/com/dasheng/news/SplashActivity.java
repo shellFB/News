@@ -54,7 +54,12 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void startLogoOuter() {
-
+        AnimatorSet set=new AnimatorSet();
+        set.playTogether(
+                ObjectAnimator.ofFloat(logoOuterIv, "scaleX", 1, 1.25f, 0.75f, 1.15f, 1),
+                ObjectAnimator.ofFloat(logoOuterIv, "scaleY", 1, 0.75f, 1.25f, 0.85f, 1)
+        );
+        set.setDuration(2000).start();
     }
 
     private void startInnerAnimation() {
