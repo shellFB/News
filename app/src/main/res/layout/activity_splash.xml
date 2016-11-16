@@ -6,13 +6,13 @@
     xmlns:tools="http://schemas.android.com/tools">
     <ImageView
         android:id="@+id/logo_outer_iv"
-        android:layout_width="@dimen/x120"
+        android:layout_width="@dimen/x80"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:src="@drawable/ic_launcher_outer"/>
     <ImageView
         android:id="@+id/logo_inner_iv"
-        android:layout_width="@dimen/x120"
+        android:layout_width="@dimen/x80"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:src="@drawable/ic_launcher_inner"
@@ -26,6 +26,7 @@
         android:layout_below="@id/logo_outer_iv"
         android:alpha="1"
         android:text="@string/app_name"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="@dimen/medium"
         tools:alpha="1"/>
