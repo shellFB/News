@@ -1,8 +1,11 @@
 package com.dasheng.news;
 
+import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +14,7 @@ import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dasheng.news.utils.WindowTittle;
 
@@ -53,6 +57,7 @@ public class SplashActivity extends AppCompatActivity {
         appNameTv.startAnimation(animation);
     }
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     private void startLogoOuter() {
         AnimatorSet set=new AnimatorSet();
         set.playTogether(
@@ -60,6 +65,27 @@ public class SplashActivity extends AppCompatActivity {
                 ObjectAnimator.ofFloat(logoOuterIv, "scaleY", 1, 0.75f, 1.25f, 0.85f, 1)
         );
         set.setDuration(2000).start();
+        set.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animator) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animator) {
+
+            }
+        });
     }
 
     private void startInnerAnimation() {
