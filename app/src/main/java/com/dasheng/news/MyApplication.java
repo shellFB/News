@@ -28,7 +28,7 @@ import de.greenrobot.dao.query.QueryBuilder;
 /**
  * @author shell
  * @version 1.0
- * @desc
+ * @desc ee
  * @since 2016/11/17 0017 9:23
  */
 public class MyApplication extends Application {
