@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
+import com.dasheng.news.R;
+
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
@@ -39,6 +41,7 @@ public class NetWorkUtil {
                 }
             }
         }
+        T.showLong(context, context.getString(R.string.internet_error));
         return false;
     }
     /**

@@ -1,4 +1,4 @@
-package com.dasheng.news.mvp.ui;
+package com.dasheng.news.mvp.ui.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
